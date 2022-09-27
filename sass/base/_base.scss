@@ -1,0 +1,27 @@
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
