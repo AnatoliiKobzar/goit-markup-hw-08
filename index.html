@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container container">
         <nav class="nav">
           <a href="./index.html" class="logo-main">Web<span class="logo-black">Studio</span></a>
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="hero section">
@@ -124,10 +124,10 @@
 
       <!-- Чем мы занимаемся -->
 
-      <section class="section">
+      <section class="section employments">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="employments">
+          <ul class="employments__list">
             <li class="employments__item">
               <img src="./images/box1.jpg" alt="робота за столом" width="370" height="294" />
               <p class="employments__text">Десктопні додатки</p>
@@ -151,7 +151,7 @@
 
       <!-- Наша команда -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
@@ -305,7 +305,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Почтоянные клиенты -->
 
@@ -362,81 +362,83 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__group">
-          <a href="./index.html" class="logo-main">Web<span class="logo-white">Studio</span></a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
+        <div class="media-container">
+          <div class="footer__group">
+            <a href="./index.html" class="logo-main">Web<span class="logo-white">Studio</span></a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/VaSAjemoiXG7hevM7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="address__link address__link--white"
+                    >м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__socials-link">
+            <h2 class="footer__subtitle">приєднуйтесь</h2>
+            <ul class="socials">
+              <li class="socials__item">
                 <a
-                  href="https://goo.gl/maps/VaSAjemoiXG7hevM7"
+                  class="socials__link socials__link--dark"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="address__link address__link--white"
-                  >м. Київ, пр-т Лесі Українки, 26
+                  href="#"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="#"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="#"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="#"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer__socials-link">
-          <h2 class="footer__subtitle">приєднуйтесь</h2>
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark"
-                target="_blank"
-                rel="noreferrer noopener"
-                href="#"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark"
-                target="_blank"
-                rel="noreferrer noopener"
-                href="#"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark"
-                target="_blank"
-                rel="noreferrer noopener"
-                href="#"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark"
-                target="_blank"
-                rel="noreferrer noopener"
-                href="#"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="follow-form">

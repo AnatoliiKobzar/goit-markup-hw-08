@@ -1,10 +1,15 @@
 .follow-form {
     margin-left: auto;
 
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
     &__label input {
         margin: 0;
+        margin-bottom: 20px;
         padding: 15px 16px 15px 16px;
-        width: 358px;
+        width: 100%;
 
         color: var(--light-color);
         font-size: 16px;
@@ -13,6 +18,15 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            width: 358px;
+        }
     }
 
     &__label input::placeholder {
@@ -27,13 +41,18 @@
 }
 
 .follow-form__countainer {
-    display: flex;
-    gap: 12px;
+    @media screen and (min-width: 1200px){
+        display: flex;
+        gap: 12px;
+    }
 }
 
 .follow-form__btn {
     display: flex;
     gap: 10px;
+
+    margin: 0 auto;
+
     align-items: center;
     padding-left: 28px;
     padding-right: 28px;
