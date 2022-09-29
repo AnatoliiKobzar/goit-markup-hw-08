@@ -12,6 +12,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .contacts__link {
@@ -28,6 +33,10 @@
   letter-spacing: 0.02em;
 
   transition: color var(--main-anim);
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding: 0;
+  }
 
   &:hover,
   &:focus {

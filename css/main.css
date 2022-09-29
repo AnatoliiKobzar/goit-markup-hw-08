@@ -190,6 +190,15 @@ p {
     display: none;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .contacts__link {
   display: -webkit-box;
@@ -209,6 +218,11 @@ p {
   -webkit-transition: color var(--main-anim);
   transition: color var(--main-anim);
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts__link {
+    padding: 0;
+  }
+}
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
@@ -221,11 +235,14 @@ p {
   padding-top: 118px;
   padding-bottom: 118px;
   border: 1px solid #000000;
+  background-color: var(--secondary-background-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg.jpg);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: var(--secondary-background-color);
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -737,7 +754,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
+  width: 450px;
   background-color: var(--main-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -746,6 +763,23 @@ p {
   transition: opacity var(--main-anim), -webkit-transform var(--main-anim);
   transition: opacity var(--main-anim), transform var(--main-anim);
   transition: opacity var(--main-anim), transform var(--main-anim), -webkit-transform var(--main-anim);
+}
+@media screen and (max-width: 440px) {
+  .modal {
+    width: 100%;
+    padding: 40px 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+@media (orientation: landscape) and (max-height: 617px) {
+  .modal {
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 .modal__btn {
@@ -927,13 +961,20 @@ p {
   padding: 0;
 }
 .checkbox__label {
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .checkbox__link {
   color: #2196f3;
@@ -1015,6 +1056,7 @@ p {
   transition: -webkit-transform var(--main-anim);
   transition: transform var(--main-anim);
   transition: transform var(--main-anim), -webkit-transform var(--main-anim);
+  overflow: auto;
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);
