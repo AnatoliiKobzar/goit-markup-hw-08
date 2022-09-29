@@ -1,59 +1,58 @@
 .footer {
-    background-color: var(--secondary-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    &__subtitle {
-        margin-bottom: 20px;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--light-color);
-    }
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
 
-    @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     &__group {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
     }
 
     &__socials-link {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
     }
-    }
-    
+  }
 
-    @media screen and (max-width: 1199px) {
-    &__group{
-        text-align: center;
+  @media screen and (max-width: 1199px) {
+    &__group {
+      text-align: center;
     }
 
     &__socials-link {
-        text-align: center;
+      text-align: center;
     }
-    }
+  }
 }
 
 .footer__container {
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        gap: 70px;
-        align-items: baseline;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
 }
 
-.media-container{
-    @media screen and (min-width: 768px) {
-        display: flex;
-        gap: 70px;
-        align-items: baseline;
-    }
-  
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        justify-content: space-between;
+.media-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
 
-        margin-left: 76px;
-        margin-right: 89px;
-        margin-bottom: 60px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+
+    margin-left: 76px;
+    margin-right: 89px;
+    margin-bottom: 60px;
+  }
 }
