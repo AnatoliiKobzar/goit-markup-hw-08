@@ -139,12 +139,25 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="employments__list">
             <li class="employments__item">
-              <img src="./images/box1.jpg" alt="робота за столом" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/employments/img_lg-@1x.jpg 1x,
+                  ./images/employments/img_lg-@2x.jpg 2x
+                "
+                src="./images/employments/img_lg-@1x.jpg"
+                alt="робота за столом"
+                width="370"
+                height="294"
+              />
               <p class="employments__text">Десктопні додатки</p>
             </li>
             <li class="employments__item">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/employments/img_lg-@1x-1.jpg 1x,
+                  ./images/employments/img_lg-@2x-1.jpg 2x
+                "
+                src="./images/employments/img_lg-@1x-1.jpg"
                 alt="ноутбук та телефон в руці"
                 width="370"
                 height="294"
@@ -152,7 +165,16 @@
               <p class="employments__text">Мобільні додатки</p>
             </li>
             <li class="employments__item">
-              <img src="./images/box3.jpg" alt="палітра на планшеті" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/employments/img_lg-@1x-2.jpg 1x,
+                  ./images/employments/img_lg-@2x-2.jpg 2x
+                "
+                src="./images/employments/img_lg-@1x-2.jpg"
+                alt="палітра на планшеті"
+                width="370"
+                height="294"
+              />
               <p class="employments__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -161,7 +183,7 @@
 
       <!-- Наша команда -->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
@@ -315,7 +337,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Почтоянные клиенты -->
 
@@ -557,7 +579,12 @@
           <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11</a>
         </li>
         <li class="mobile-contacts__item">
-          <a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--mail"> info@devstudio.com</a>
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts__link mobile-contacts__link--mail"
+          >
+            info@devstudio.com</a
+          >
         </li>
       </ul>
 
@@ -578,7 +605,11 @@
           >
         </li>
         <li>
-          <a href="#" class="mobile-socials__link mobile-socials__link--not_after" target="_blank" rel="noreferrer noopener"
+          <a
+            href="#"
+            class="mobile-socials__link mobile-socials__link--not_after"
+            target="_blank"
+            rel="noreferrer noopener"
             >LinkedIn</a
           >
         </li>

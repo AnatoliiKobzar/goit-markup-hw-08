@@ -1,36 +1,38 @@
 .employments {
-    &__list{
+  padding-top: 0;
+
+  &__list {
     @extend %list;
-    
+
     display: flex;
     gap: 30px;
-    }
+  }
 
-    &__item {
-        position: relative;
-    }
+  &__item {
+    position: relative;
+  }
 
-    &__text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 74px;
-        width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 74px;
+    width: 100%;
 
-        font-weight: 700;
-        line-height: calc(16 / 14);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-        color: var(--light-color);
-        background-color: rgba(47, 48, 58, 0.8);
-    }
+    color: var(--light-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }

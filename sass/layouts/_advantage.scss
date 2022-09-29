@@ -1,7 +1,5 @@
 .advantages {
-  padding-bottom: 0;
-
-  &__list {
+    &__list {
     @extend %list;
 
     @media screen and (min-width: 768px) {
