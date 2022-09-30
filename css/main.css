@@ -462,6 +462,10 @@ p {
   letter-spacing: 0.03em;
 }
 
+.team__img {
+  width: 100%;
+}
+
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
